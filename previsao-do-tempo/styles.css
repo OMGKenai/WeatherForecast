@@ -16,6 +16,21 @@ body {
     background-position: center;
 }
 
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
 .caixa-maior {
     background-color: #000000;
     width: 95%;
@@ -23,6 +38,8 @@ body {
     opacity: 0.8;
     padding: 20px;
     border-radius: 25px;
+    margin: 10px;
+    box-sizing: border-box;
 }
 
 input {
@@ -30,10 +47,11 @@ input {
     outline: none;
     padding: 10px;
     border-radius: 24px;
-    font-size: 20px;
+    font-size: 16px;
     background-color: #7c7c7c2b;
     color: #ffffff;
-    width: calc( 100% - 100px);
+    width: calc(100% - 100px);
+    box-sizing: border-box;
 }
 
 button {
@@ -42,8 +60,8 @@ button {
     padding: 10px;
     border-radius: 50px;
     background-color: #7c7c7c2b;
-    float: right;
     cursor: pointer;
+    float: right;
 }
 
 button:hover {
@@ -51,13 +69,15 @@ button:hover {
 }
 
 .caixa-media {
-    margin-top: 30px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .caixa-menor {
     display: flex;
-    margin-top: 30px;
+    flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .lupa {
@@ -66,28 +86,30 @@ button:hover {
 
 h2 {
     color: #ffffffff;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .temp {
     color: #ffffffff;
-    margin-top: 30px;
-    font-size: 26px;
-    font-weight: bold
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .descricao {
     color: #ffffffff;
     text-transform: capitalize;
     margin-left: 6px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .umidade {
     color: #ffffffff;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .icone {
-    height: 50%;
+    width: 50px;
+    height: auto;
 }
+
