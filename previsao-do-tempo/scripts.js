@@ -30,3 +30,9 @@ function cliqueiNoBotao(){
 
     buscarCidade(cidade)
 }
+
+function verificarEnter(event) {
+    if (event.key === 'Enter') {
+        cliqueiNoBotao();  // Chama a função de busca quando o Enter for pressionado
+    }
+}
